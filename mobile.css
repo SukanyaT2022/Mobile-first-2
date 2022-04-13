@@ -1,0 +1,88 @@
+/*for media queries we need body,html*/
+body,html{
+    overflow-x: hidden;/*when we inspect and squeez the size--
+    it overflow so we put overflow hidden to make everyhting fit in the box
+     no matter what size ipad iphone or laptop*/
+margin: ;
+padding: ;
+
+
+
+}
+
+.parents{
+
+width: 90%;
+margin: auto;
+display:flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border: 5px solid green;
+}
+
+.child{
+    border: 5px solid lightcoral;
+    width: 90%;
+    margin: 20px;
+    display:flex;/* from display flex to justify content center--help to put everyhing in child box center*/
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px 10px;
+box-sizing: border-box;
+   /* when we use padding the box increase size bigger
+   if we donot want box bigger-- use box-sizing: boder-box; after padding*/
+}
+
+.child img{
+    width: 100%;/* 100% helps to make image fit the box based on the size of the box*/
+  
+}
+
+p{
+   text-align: justify; /*justify help text to be center perfectly*/
+   padding: 10px;
+}
+
+span{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+/*we made iphone first and then use media quries for ipad and laptop*/
+
+/*ipad size*/
+
+@media(min-width:768px){
+.child{
+    background-color: lightsalmon;
+    width: 44%;
+    /* it will show 2 pics in each row--
+    flex wrap wrap  on line 18 is important to make 2 pics on each row*/
+ margin-top: 30px ;   
+
+}
+
+}
+
+/*laptop*/
+@media(min-width:1280px){
+    .child{
+        background-color: lightgoldenrodyellow;
+        width: 20%;
+        /* it will show 2 pics in each row--
+        flex wrap wrap  on line 18 is important to make 2 pics on each row*/
+    
+    
+    }
+    
+    }
+    
+    
+    
+    
+
+
+
+
